@@ -1,0 +1,30 @@
+name: First contribution question
+description: Ask for help with the COMMiT '26 contribution lab.
+title: "[Help]: "
+labels:
+  - good first issue
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for asking. Beginner questions are welcome here.
+  - type: dropdown
+    id: step
+    attributes:
+      label: Where are you stuck?
+      options:
+        - Finding the participants folder
+        - Creating the file
+        - Creating a branch
+        - Opening the pull request
+        - Reviewing the change
+        - Something else
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: What happened?
+      description: Describe what you tried. Do not include passwords, tokens, or private information.
+    validations:
+      required: true
